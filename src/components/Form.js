@@ -9,6 +9,10 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
     const submitTodoHandler = (e) =>{
         e.preventDefault();
+        if(!inputText){
+            alert('Please enter todo')
+            return
+        }
         setTodos([
             ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }
         ])
