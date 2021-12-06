@@ -11,7 +11,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
         e.preventDefault();
         if(!inputText){
             alert('Please enter todo')
-            return
+            return 
         }
         setTodos([
             ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }
