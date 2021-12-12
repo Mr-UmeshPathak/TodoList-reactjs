@@ -131,6 +131,16 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
+
+.footer{
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 /* Transition */
 /*
 .select:hover::after {

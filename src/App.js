@@ -57,7 +57,7 @@ function App() {
       setStatus={setStatus} />
 
       <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos} />
-
+      <p className='footer'>&copy; Umesh Pathak</p>
     </div>
   );
 }
